@@ -1,6 +1,5 @@
-# prog
+# 【Cheese academy】
 
-【Cheese academy】
 ①課題内容
 Cheese academyホームページ
 ②工夫した点，こだわった点
