@@ -1,7 +1,7 @@
-# 【Cheese academy】
+# 【Cheese Academy】
 
 ## ①課題内容<br>  
-Cheese academyホームページ
+Cheese Academyホームページ
 ## ②工夫した点，こだわった点 <br> 
 キャラクターを取り入れ、要素にも動きを付けるなど、面白さにこだわって制作。
 ## ③苦戦した点など <br> 
