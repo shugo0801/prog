@@ -1,0 +1,637 @@
+
+.main {
+    max-width: 1400px;
+    /* margin: 0 auto;   block要素に使用 */
+    text-align: center;
+    padding:60px 0;
+    width:100%;
+    position: relative;
+}
+
+.gs {
+   visibility: hidden;
+}
+
+.gs.visible {
+    visibility: visible;
+}
+
+
+
+/* 説明画面 */
+.saisyo {
+   position: relative;
+}
+
+.saisyo.none {
+    display: none;
+}
+.setumei1 {
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translateX(-50%);
+    width:1000px;
+    height: 700px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    margin-top: 100px;
+    padding:10px 0;
+}
+
+
+.setumei1 h1 {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.setumei1 p {
+    color: #fff;
+    font-size: 100%;/*ボタンの大きさ*/
+    font-weight: bold;
+    border: 1px solid #fff;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    width: 1.3em;
+    line-height: 1.3em;
+    cursor: pointer;
+    transition: .2s;
+    position: absolute;
+    top:4%;
+    right:3%;
+
+}
+
+
+
+/* G'sカード */
+.setumei {
+	background: #FFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+}
+.setumei p {
+	position: fixed;
+	left: 40%;
+	top: 40%;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 9999;
+	width: 280px;
+}
+
+/* ざわざわ */
+.zawa img {
+    width: 130px;
+}
+
+#zawa1 {
+    position: absolute;
+    right:6%;
+    top: 15%;
+        animation:zawa1 ease-in-out 4s infinite alternate;
+        -webkit-animation:zawa1 ease-in-out 4s infinite alternate;
+        -moz-animation:zawa1 ease-in-out 4s infinite alternate;
+      }
+      @keyframes zawa1{
+        0%   { transform:translate(0%, 0%);  opacity:1;}
+        100% { transform:translate(-30px, 0%); opacity:0;}
+      }
+      @-webkit-keyframes zawa1{
+        0%   { -webkit-transform:translate(0%, 0%);  opacity:1;}
+        100% { -webkit-transform:translate(-30px, 0%); opacity:0;}
+      }
+      @-moz-keyframes zawa1{
+        0%   { -moz-transform:translate(0%, 0%);  opacity:1;}
+        100% { -moz-transform:translate(-30px, 0%); opacity:0;}
+      }
+
+#zawa2 {
+    position: absolute;
+    left:8%;
+    top:54%;
+    animation:zawa1 ease-in-out 3s infinite alternate;
+        -webkit-animation:zawa1 ease-in-out 3s infinite alternate;
+        -moz-animation:zawa1 ease-in-out 3s infinite alternate;
+      }
+      @keyframes zawa1{
+        0%   { transform:translate(0%, 0%);  opacity:1;}
+        100% { transform:translate(-30px, 0%); opacity:0;}
+      }
+      @-webkit-keyframes zawa1{
+        0%   { -webkit-transform:translate(0%, 0%);  opacity:1;}
+        100% { -webkit-transform:translate(-30px, 0%); opacity:0;}
+      }
+      @-moz-keyframes zawa1{
+        0%   { -moz-transform:translate(0%, 0%);  opacity:1;}
+        100% { -moz-transform:translate(-30px, 0%); opacity:0;}
+
+      }
+
+#zawa3 {
+    position: absolute;
+    right:3%;
+    top:52%;
+    animation:zawa1 ease-in-out 2s infinite alternate;
+        -webkit-animation:zawa1 ease-in-out 2s infinite alternate;
+        -moz-animation:zawa1 ease-in-out 2s infinite alternate;
+      }
+      @keyframes zawa1{
+        0%   { transform:translate(0%, 0%);  opacity:1;}
+        100% { transform:translate(-30px, 0%); opacity:0;}
+      }
+      @-webkit-keyframes zawa1{
+        0%   { -webkit-transform:translate(0%, 0%);  opacity:1;}
+        100% { -webkit-transform:translate(-30px, 0%); opacity:0;}
+      }
+      @-moz-keyframes zawa1{
+        0%   { -moz-transform:translate(0%, 0%);  opacity:1;}
+        100% { -moz-transform:translate(-30px, 0%); opacity:0;}
+}
+
+#zawa4 {
+    position: absolute;
+    right:10%;
+    animation:zawa1 ease-in-out 3s infinite alternate;
+        -webkit-animation:zawa1 ease-in-out 3s infinite alternate;
+        -moz-animation:zawa1 ease-in-out 3s infinite alternate;
+      }
+      @keyframes zawa1{
+        0%   { transform:translate(0%, 0%);  opacity:1;}
+        100% { transform:translate(-30px, 0%); opacity:0;}
+      }
+      @-webkit-keyframes zawa1{
+        0%   { -webkit-transform:translate(0%, 0%);  opacity:1;}
+        100% { -webkit-transform:translate(-30px, 0%); opacity:0;}
+      }
+      @-moz-keyframes zawa1{
+        0%   { -moz-transform:translate(0%, 0%);  opacity:1;}
+        100% { -moz-transform:translate(-30px, 0%); opacity:0;}
+      }
+
+#zawa5 {
+    position: absolute;
+    left:1%;
+    top:25%;
+    animation:zawa1 ease-in-out 2s infinite alternate;
+        -webkit-animation:zawa1 ease-in-out 2s infinite alternate;
+        -moz-animation:zawa1 ease-in-out 2s infinite alternate;
+      }
+      @keyframes zawa1{
+        0%   { transform:translate(0%, 0%);  opacity:1;}
+        100% { transform:translate(-30px, 0%); opacity:0;}
+      }
+      @-webkit-keyframes zawa1{
+        0%   { -webkit-transform:translate(0%, 0%);  opacity:1;}
+        100% { -webkit-transform:translate(-30px, 0%); opacity:0;}
+      }
+      @-moz-keyframes zawa1{
+        0%   { -moz-transform:translate(0%, 0%);  opacity:1;}
+        100% { -moz-transform:translate(-30px, 0%); opacity:0;}
+      }
+
+#zawa6 {
+    position: absolute;
+    left:15%;
+    top:38%;
+    animation:zawa1 ease-in-out 4s infinite alternate;
+        -webkit-animation:zawa1 ease-in-out 4s infinite alternate;
+        -moz-animation:zawa1 ease-in-out 4s infinite alternate;
+      }
+      @keyframes zawa1{
+        0%   { transform:translate(0%, 0%);  opacity:1;}
+        100% { transform:translate(-30px, 0%); opacity:0;}
+      }
+      @-webkit-keyframes zawa1{
+        0%   { -webkit-transform:translate(0%, 0%);  opacity:1;}
+        100% { -webkit-transform:translate(-30px, 0%); opacity:0;}
+      }
+      @-moz-keyframes zawa1{
+        0%   { -moz-transform:translate(0%, 0%);  opacity:1;}
+        100% { -moz-transform:translate(-30px, 0%); opacity:0;}
+      }
+#zawa7 {
+    position: absolute;
+    left:8%;
+    top:8%;
+    animation:zawa1 ease-in-out 4s infinite alternate;
+        -webkit-animation:zawa1 ease-in-out 4s infinite alternate;
+        -moz-animation:zawa1 ease-in-out 4s infinite alternate;
+      }
+      @keyframes zawa1{
+        0%   { transform:translate(0%, 0%);  opacity:1;}
+        100% { transform:translate(-30px, 0%); opacity:0;}
+      }
+      @-webkit-keyframes zawa1{
+        0%   { -webkit-transform:translate(0%, 0%);  opacity:1;}
+        100% { -webkit-transform:translate(-30px, 0%); opacity:0;}
+      }
+      @-moz-keyframes zawa1{
+        0%   { -moz-transform:translate(0%, 0%);  opacity:1;}
+        100% { -moz-transform:translate(-30px, 0%); opacity:0;}
+      }
+#zawa8 {
+    position: absolute;
+    left:45%;
+    top:-4%;
+    animation:zawa1 ease-in-out 2s infinite alternate;
+        -webkit-animation:zawa1 ease-in-out 2s infinite alternate;
+        -moz-animation:zawa1 ease-in-out 2s infinite alternate;
+      }
+      @keyframes zawa1{
+        0%   { transform:translate(0%, 0%);  opacity:1;}
+        100% { transform:translate(-30px, 0%); opacity:0;}
+      }
+      @-webkit-keyframes zawa1{
+        0%   { -webkit-transform:translate(0%, 0%);  opacity:1;}
+        100% { -webkit-transform:translate(-30px, 0%); opacity:0;}
+      }
+      @-moz-keyframes zawa1{
+        0%   { -moz-transform:translate(0%, 0%);  opacity:1;}
+        100% { -moz-transform:translate(-30px, 0%); opacity:0;}
+      }
+
+.field {
+    background-color:#8EB8FF;
+    height: 1000px;
+    width: 100%;
+    position: absolute;
+    left:20%;
+   
+}
+
+
+#gokuu {
+    height: 200px;
+    display: block;
+    position: absolute;
+    top: -3px;
+    left: 40px;
+
+
+}
+
+.aite-tefuda {
+    display: inline-block;
+    position: relative;
+    margin:40px 5px;
+    width:800px;
+}
+
+
+.aite-tefuda img {
+    width: 120px;
+    height: 140px;
+    padding:0 5px;
+    /* position: absolute; */
+    /* top: 0;
+    left: 0;  */
+}
+
+
+.aite-field {
+    display: inline-block;
+    background-color:#EEEEEE;
+    width: 700px;
+    height: 160px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.aite-card {
+    display: inline-block;
+    width: 120px;
+    height: 140px;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top: 6%;
+    visibility: hidden;
+}
+
+/* 相手のカードめくり */
+.aite-heimin {
+    /* display: inline-block; */
+    position: absolute;
+    top:23%;
+    left:55%;
+    width: 135px;
+    height: 145px;
+    padding-bottom:2px;
+    visibility: hidden;
+}
+.aite-heimin.visible {
+    visibility: visible;
+    z-index: 90;
+    left:44%;
+}
+
+.aite-king {
+    position: absolute;
+    width: 135px;
+    height: 145px;
+    top:23%;
+    left:55%;
+    visibility: hidden;
+}
+
+.aite-king.visible {
+    z-index: 90;
+    visibility: visible;
+    left: 44%;
+}
+
+.aite-card.visible {
+    visibility: visible;
+}
+
+.aite-tefuda-card.shugo {
+    display: none;
+}
+
+
+#card1 {
+    width: 120px;
+    height: 140px;
+    /* visibility: hidden; */
+}
+
+/* 次のバトルボタン */
+.next {
+        position: absolute;
+        left:84%;
+        top:44%;
+        width: 150px;
+        height: 50px;
+        display: inline-block;
+        padding: 5px 5px;
+        text-decoration: none;
+        text-align: center;
+        line-height: 50px;
+        font-size: 20px;
+        color: #FFF;
+        /* background: #fd9535; */
+        background-color: #333;
+         border: 2px solid #333;
+         color: #fff;
+        border-radius: 4px;/*角の丸み*/
+        box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.05);
+        font-weight: bold;
+        cursor: pointer;
+        border-bottom: solid 4px #627295;
+      }
+      
+      .next:hover {
+        background-color: #fff;
+        border-color: #59b1eb;
+        color: #59b1eb;
+      }
+
+      .next:active {
+        /*押したとき*/
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);/*下に動く*/
+        border-bottom: none;
+      }
+
+
+
+/* 確認画面 */
+#check {
+display: inline-block;
+background: cadetblue;
+width: 500px;
+height:200px;
+position: absolute;
+top:30%;
+left:30%;
+z-index: 30;
+border-radius: 5px;
+visibility: hidden;
+}
+
+.card_set {
+    margin:40px;
+}
+#check p {
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+
+.btn .set {
+    padding: 0 30px;
+    margin: 0 20px;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#check.active {
+    visibility: visible; 
+}
+
+
+#dorei.shugo {
+    visibility: hidden;
+}
+
+
+/* 勝負ボタン */
+.syoubu {
+    background:#dd0a0a;
+    border-radius: 50%;
+    color:#fff;
+    width: 130px;
+    height: 130px;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top:29%;
+    right:5%;
+    cursor: pointer;
+    border-bottom: solid 4px #627295;
+}
+
+.syoubu:hover {
+        background-color: #fff;
+        border-color: #dd0a0a;
+        color: #dd0a0a;
+      }
+
+.syoubu:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+    border-bottom: none;
+  }
+
+.syoubu p {
+    padding-top: 46px;
+}
+
+
+/* 自分 */
+.my-field {
+    display: inline-block;
+    background-color:#EEEEEE;
+    width: 700px;
+    height: 160px; 
+    position: relative;
+}
+
+
+.my-tefuda img {
+    margin:40px 8px;
+}
+
+.my-tefuda img:hover {
+        transform: translate(0, -20px); 
+        transition: .3s;
+        cursor: pointer;
+        opacity: 1;
+-webkit-animation: flash 1.5s;
+animation: flash 1.5s;
+        
+}
+
+@-webkit-keyframes flash {
+    0% {
+    opacity: .4;
+    }
+    100% {
+    opacity: 1;
+    }
+  }
+  @keyframes flash {
+    0% {
+    opacity: .4;
+    }
+    100% {
+    opacity: 1;
+    }
+  }
+
+.my-card {
+    display: inline-block;
+    width: 120px;
+    height: 140px;
+    /* background-color: violet; */
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top: 6%;
+    visibility: hidden;
+}
+
+.my-card.visible {
+    visibility: visible;
+}
+
+/* カード選択時のカード配置 */
+.tefuda-card.battle.a {
+    display: inline-block;
+    width: 135px;
+    height: 143px;
+    position: absolute;
+    left:48%;
+    transform: translateX(-50%);
+    top: 36%;
+    visibility: hidden;
+}
+
+.tefuda-card.battle.a.visible {
+    visibility:visible ;
+}
+
+
+#restart {
+    /* padding: 10px 30px; */
+    margin: 10px 20px;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 勝敗 */
+.win {
+    position: absolute;
+    top:3%;
+    z-index: 100;
+    width: 1400px;
+    height: 200px;
+    font-size:180px;
+    background-color: #FFFF77;
+    color: crimson;
+    visibility: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.win.visible {
+    visibility: visible;
+    transition-delay: .6s;
+}
+
+.lose {
+    position: absolute;
+    top:3%;
+    z-index: 100;
+    width: 1400px;
+    height: 200px;
+    font-size:180px;
+    background-color:darkgray;
+    color: #3366FF;
+    visibility: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+
+.lose.visible {
+    visibility: visible;
+    transition-delay: .6s;
+}
+
+.draw {
+    position: absolute;
+    top:35%;
+    left:33%;
+    z-index: 100;
+    width: 450px;
+    height: 100px;
+    font-size:100px;
+    background-color:#627295;
+    color: #32CD32;
+    visibility: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 4px;
+    transform:rotate(-20deg);
+   
+}
+
+.draw.visible {
+    visibility: visible;
+    transition-delay: .6s;
+}
+
+
+
+
+
+
+
+
+
+
+
+

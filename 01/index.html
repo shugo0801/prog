@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G'sカード</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Creepster rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Permanent+Marker rel="stylesheet"> -->
+    
+</head>
+
+<body>
+ <div class="saisyo">
+    <div class="setumei">
+        <p><img src="img/gs.png" alt=""></p>
+    </div>
+    <div class="setumei1">
+        <h1>G'sカードルール</h1>
+        <div class="batsu" onclick="batsu()"><p>✖️</p></div>
+        <img src="img/setumei.png" alt="">
+    </div>
+</div>
+    
+    <div class="main gs">
+        <div class="field">
+
+            <!-- ざわざわ -->
+            <div class="zawa">
+                <img src="img/zawa.png" alt="" id="zawa1">  
+            </div>
+            <div class="zawa">
+                <img src="img/zawa.png" alt="" id="zawa2">  
+            </div>
+            <div class="zawa">
+                <img src="img/zawa.png" alt="" id="zawa3">  
+            </div>
+            <div class="zawa">
+                <img src="img/zawa.png" alt="" id="zawa4">  
+            </div>
+            <div class="zawa">
+                <img src="img/zawa.png" alt="" id="zawa5">  
+            </div>
+            <div class="zawa">
+                <img src="img/zawa.png" alt="" id="zawa6">  
+            </div>
+            <div class="zawa">
+                <img src="img/zawa.png" alt="" id="zawa7">  
+            </div>
+            <div class="zawa">
+                <img src="img/zawa.png" alt="" id="zawa8">  
+            </div>
+
+
+            <div class="win">
+            <h1>YOU WIN !!!!!</h1>
+            </div>
+            <div class="lose">
+            <h1>YOU LOSE...</h1>
+            </div>
+            <div class="draw">
+            <h1>-DRAW-</h1>
+            </div>
+
+            <!-- 相手 -->
+            <!-- <img src="img/gokuu.png" alt="" id="gokuu"> -->
+            <div class="aite-tefuda">
+               <img src="img/ecard_ura2.png" alt="" class="aite-tefuda-card">
+               <img src="img/ecard_ura2.png" alt="" class="aite-tefuda-card">
+               <img src="img/ecard_ura2.png" alt="" class="aite-tefuda-card">
+               <img src="img/ecard_ura2.png" alt="" class="aite-tefuda-card">
+               <img src="img/ecard_ura2.png" alt="" class="aite-tefuda-card"> 
+            </div>
+            
+            <div class="aite-field">
+                <div class="aite-card"><img src="img/ecard_ura2.png" alt="" id="card1"></div>
+            </div>
+
+            <!-- 相手のカードめくり -->
+            <div class="aite-card-omote">
+                <img src="img/ecard3_aite.png" alt="" class="aite-heimin"> 
+                <img src="img/ecard1_aite.png" alt="" class="aite-king">
+            </div>
+            
+
+            <!-- 確認画面 -->
+        <div id="check">
+            <div class="card_set">
+                <p>このカードをセットしますか？</p>
+            <div class="btn">
+            <button class="set ok" onclick="cardSet(1)"> OK</button>
+            <button class="set chansel" onclick="cardSet(2)">キャンセル</button>
+             </div>
+            </div>
+        </div>
+
+            <!-- 勝負ボタン -->
+            <div class="syoubu">
+                <p onclick="duel()">Duel</p>
+            </div>
+
+            <!-- 次のバトルボタン -->
+            <!-- <div class="next">
+                <button class="set" onclick="removeEvent()">NEXT DUEL</button>
+            </div> -->
+
+            <div class="next" onclick="removeEvent()">NEXT</div>
+
+
+            <!-- 自分 -->
+            <div class="my-field">
+                <div class="my-card"><img src="img/ecard_ura.png" alt="" id="card1"></div>
+            </div>
+
+            <div class="my-tefuda" id="a">
+                <img src="img/ecard2.png" alt="" class="tefuda-card" id="dorei">
+                <img src="img/ecard3.png" alt="" class="tefuda-card" id="heimin">
+                <img src="img/ecard3.png" alt="" class="tefuda-card" id="heimin2">
+                <img src="img/ecard3.png" alt="" class="tefuda-card" id="heimin3"> 
+                <img src="img/ecard3.png" alt="" class="tefuda-card" id="heimin4">
+                
+            </div>
+            <button id="restart" onclick="reset()">Reset</button>
+        </div>
+
+    </div>
+    
+    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
