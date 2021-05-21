@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アカウント情報</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+
+   <!-- アカウント編集ページ -->
+    <div class="hensyuu-page">
+
+    <!-- header -->
+        <div class="header">
+            <h1>CARE SUCCESS</h1>
+            <div class="help">
+            <div class="help1">ヘルプ</div>
+            <div class="help2">フィードバック</div>
+             </div>
+        </div>
+
+    <!-- トップ画像 -->
+    <div class="pro-hennsyuu" id="pro">
+        <img id="preview">
+        <div class="input-form">
+            <div class="myImage"><input type="file" id="myImage" accept="image/*"></div>
+            <div class="user-form">
+                <p>ユーザー名</p><input type="text" id="user-form"></div>
+                <div class="adress-form">
+                <p>住所</p><input type="text" id="adress-form"></div>
+                <div class="phone-form">
+                <p>電話番号</p><input type="text" id="phone-form"></div>
+                <div class="mail-form">
+                <p>メールアドレス</p><input type="text" id="mail-form"></div>
+                <div class="haisin-form">
+                <p>メール配信設定</p><input type="text" id="haisin-form"></div>
+                <div class="plan-form">
+                <p>プラン</p><input type="text" id="plan-form"></div>
+    
+            <ul>
+                <li id="save">登録</li>
+                <li id="clear">削除</li>
+            </ul>
+            <div class="batsu" onclick="batsu()"><p>✖️</p></div>
+        </div>
+    </div>
+
+    <div class="main" id="main">
+      <div class="sideber">
+        <div class="top-image">
+            <img src="img/icon.png" alt="">
+            <ul class="kihon">
+                <li>名前:</li>
+                <li>年齢:</li>
+                <li>要介護度:</li>
+            </ul>
+        </div>
+
+        <!-- 色んな機能をかく↓ -->
+        <div class="kinou">
+        <ul>
+            <li>機能①</li>
+            <li>機能②</li>
+            <li>機能③</li>
+            <li>機能④</li>
+            <li>機能⑤</li>
+        </ul>
+        </div>
+        <!-- 色んな機能を書く↑ -->
+      </div>
+
+        <!-- アカウント管理 -->
+        <div class="account-kanri">
+            <h1>アカウント管理</h1>
+            <table id="ta1" cellspacing="5"> 
+                <tr>
+                <th>▼ ユーザー名</th>
+                <td id="user"></td>
+                </tr>
+                <tr>
+                <th>▼ 住所</th>
+                <td id="adress"></td>
+                </tr>
+                <tr>
+                <th>▼ 電話番号</th>
+                <td id="phone"></td>
+                </tr>
+                <tr>
+                <th>▼ メールアドレス</th>
+                <td id="mail"></td>
+                </tr>
+                <tr>
+                <th>▼ メール配信設定</th>
+                <td id="haisin"></td>
+                </tr>
+                <tr>
+                <th>▼ プラン</th>
+                <td id="plan"></td>
+                </tr>
+            </table>
+        
+
+
+
+         <!-- 編集ボタン -->
+        <div class="hennsyuu">
+            <div class="next" onclick="hennsyuuEvent()">編 集</div>
+        </div>
+        </div>
+    </div>
+</div>
+
+    
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ログイン画面</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+    <!-- トップ画面 -->
+    <div class="top-page">
+     <h1>CARE SUCCESS</h1>
+    <div class="make-account" onclick="creac()">
+        <p>アカウント作成</p>
+    </div>
+    <div class="login">
+        <p id="login" onclick="logininput()">ログイン</p>
+    </div>
+   
+<!-- アカウント作成画面 -->
+    <div class="create-account" id="create_a">
+        <div class="batsu" onclick="createbatsu()"><p>✖️</p></div>
+        <h2>アカウント作成</h2>
+        <div class="newid">
+        <p>ID</p>
+    <input type="text" id="create-id">
+        </div>
+        <div class="newpass">
+            <p>Password</p>
+    <input type="text" id="create-pass">
+        </div>  
+    <div class="create" id="touroku">
+        <p>登録</p>
+    </div>
+    </div>
+
+    <!-- ログイン画面 -->
+    <div class="login2" id="login_a">
+        <div class="batsu" onclick="loginbatsu()"><p>✖️</p></div>
+        <h2>IDとパスワードを入力してください。</h2>
+        <div class="login-id">
+        <p>ID</p>
+    <input type="text" id="login-id">
+        </div>
+        <div class="login-pass">
+            <p>Password</p>
+    <input type="text" id="login-pass">
+        </div>  
+    <div class="loginbtn" onclick="login2()">
+        <p>ログイン</p>
+    </div>
+    </div>
+    </div>  
+        
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

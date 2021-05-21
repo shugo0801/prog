@@ -1,0 +1,616 @@
+.hensyuu-page {
+    max-width: 1400px;
+    /* text-align: center; */
+    width:100%;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    /* flex-direction:row ; */
+    justify-content: space-between;
+    height:70px;
+    background-color:black;
+    color: white;
+}
+
+.header h1 {
+    font-size: 30px;
+    font-weight: bold;
+    padding:20px 40px;
+    /* font-family: cursive; */
+}
+.help {
+    display: flex;
+     flex-direction:row ;
+     font-size:24px;
+     padding-right: 20px;
+}
+
+.help1,.help2 {
+    padding:20px 20px;
+}
+
+/* アカウント編集画面 */
+.pro-hennsyuu {
+    position:absolute;
+    top:45%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background: lemonchiffon;
+    height: 800px;
+    width: 1100px;
+}
+
+#pro {
+    visibility: hidden;
+}
+
+#pro.visible {
+    visibility: visible;
+}
+
+.input-form {
+    display: inline-block;
+    width: 600px;
+    padding-top: 30px;
+    position: absolute;
+    left:35%;
+}
+
+.input-form input {
+    font-size:24px;
+}
+
+
+.input-form input{
+margin:10px 0;
+padding:10px 0;
+}
+
+.input-form ul {
+    padding-right: 52px;
+}
+
+.batsu {
+   font-size: 40px;
+    font-weight: bold;
+    border: 5px solid gainsboro;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+    cursor: pointer;
+    position: absolute;
+    top:4%;
+    left:100%;
+
+}
+
+
+/* トップ画 */
+#preview {
+    width: 230px;
+    height: 250px;
+    /* background: black; */
+    position: absolute; 
+    left: 5%; 
+    top:5%;
+}
+
+
+/* mainページ */
+
+#main {
+    display: flex;
+} 
+
+#main.visible {
+    visibility: hidden;
+}
+
+/* サイドバー */
+.sideber {
+    width:400px ;
+    min-height: 100%;
+
+}
+
+/* トップ画像 */
+.top-image {
+    height:350px;
+    background:url(../img/haikei.png);
+    text-align: center;
+    position: relative;
+}
+
+.top-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 基本情報 */
+.kihon {
+    display: flex;
+    font-size:24px;
+    position: absolute;
+    bottom:4%;
+    color: white;
+}
+
+.kihon li {
+    padding:5px 10px;
+}
+
+
+/* その他機能 */
+.kinou {
+    background-color: turquoise;
+    height: 700px;
+    font-size:30px ;
+    text-align: center;
+}
+
+.kinou li {
+    padding:40px;
+}
+
+/* アカウント管理 */
+.account-kanri h1 {
+    font-size:40px;
+    font-weight: bold;
+    color:turquoise;
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+#ta1 {
+    margin: 70px;
+    width: 900px;
+    font-size: 20px;
+    display: table;
+}
+
+td {
+    font-size: 55px;
+    background-color: rgb(241, 239, 239);
+    height: 70px;
+    
+  }
+
+  th {
+    width: 30%;
+    font-size: 30px;
+    background-color: #d0e7fc;
+    text-align: left;
+    line-height: 30px;
+    display: table-cell;
+    vertical-align:middle;
+  }
+
+
+/* 編集画面 */
+input {
+margin: 10px 3%;
+  width: 95%;
+  height: 40px;
+  font-size: 80%;
+}
+
+
+.input-form ul {
+    padding: 0;
+    border-top: 1px solid #000000;
+    display: table; /* 定義 */
+    table-layout: fixed;
+    width: 96%;
+    font-size: 30px;
+    margin: 0 3%;
+    text-align: center;
+    height: 50px;
+  }
+  .input-form li {
+    list-style-type: none;
+    border: 1px solid #666;
+    background-color: #fff;
+    display: table-cell; /* 定義 */
+    cursor: pointer;
+    color: #0d7dfd;
+  }
+  .input-form li:hover {
+    background: #0d7dfd;
+    color: #fff;
+  }
+
+
+  /* 編集ボタン */
+  .next {
+    position: absolute;
+    left:85%;
+    top:8%;
+    width: 150px;
+    height: 50px;
+    display: inline-block;
+    padding: 5px 5px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    color: #FFF;
+    background-color: #333;
+     border: 2px solid #333;
+     color: #fff;
+    border-radius: 4px;/*角の丸み*/
+    box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.05);
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom: solid 4px #627295;
+  }
+
+    .next:hover {
+        background-color: #fff;
+        border-color: #59b1eb;
+        color: #59b1eb;
+      }
+
+      .next:active {
+        /*押したとき*/
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);/*下に動く*/
+        border-bottom: none;
+      }
+
+
+    
+      /* ログイン画面 */
+      /* アカウント作成ボタン */
+
+.top-page {
+    position: relative;
+    height: 900px;
+    background-image: url("../img/medical.png");
+    background-size: cover; 
+    text-align: center;
+}
+
+.top-page h1 {
+    font-size: 140px;
+    font-weight: bold;
+   padding-top: 310px;
+}
+
+      .make-account {
+        background:#dd0a0a;
+        border-radius: 5%;
+        color:#fff;
+        width: 250px;
+        height: 50px;
+        font-size: 23px;
+        text-align: center;
+        font-weight: bold;
+        position: absolute;
+        top:75%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        border-bottom: solid 4px #627295;
+    }
+    
+    .make-account:hover {
+            background-color: #fff;
+            border-color: #dd0a0a;
+            color: #dd0a0a;
+          }
+    
+    .make-account:active {
+        /*ボタンを押したとき*/
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);/*下に動く*/
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+        border-bottom: none;
+      }
+    
+    .make-account p {
+        padding-top: 46px;
+        padding-top:15px;
+    }
+
+
+    /* ログインボタン */
+      .login {
+        background:gold;
+        border-radius: 5%;
+        color:#fff;
+        width: 250px;
+        height: 50px;
+        font-size: 23px;
+        text-align: center;
+        font-weight: bold;
+        position: absolute;
+        top:66%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        border-bottom: solid 4px #627295;
+    }
+    
+    .login:hover {
+            background-color: #fff;
+            border-color: gold;
+            color: gold;
+          }
+    
+    .login:active {
+        /*ボタンを押したとき*/
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);/*下に動く*/
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+        border-bottom: none;
+      }
+    
+    .login p {
+        padding-top: 46px;
+        padding-top:15px;
+    }
+
+
+   
+    
+    .create:hover {
+            background-color: #fff;
+            border-color: blue;
+            color: blue;
+          }
+    
+    .create:active {
+        /*ボタンを押したとき*/
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);/*下に動く*/
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+        border-bottom: none;
+      }
+    
+    .create p {
+        padding-top: 46px;
+        padding-top:15px;
+    }
+
+
+    /* アカウント作成画面 */
+    .create-account {
+        position:absolute;
+        top:45%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        background:slategrey;
+        height:400px;
+        width: 700px;
+        visibility: hidden;
+    }
+    
+
+    .create-account.visible {
+        visibility: visible;
+        
+    }
+
+    .newid {
+        display: flex;
+        padding-top: 50px;
+        position:absolute;
+        top:30%;
+        left:50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .newid input {
+        width: 430px;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        font-size: 24px;
+    }
+
+    .newid p {
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 3;
+        margin-right:33px ;
+    }
+
+    .newpass {
+        display: flex;
+        position:absolute;
+        top:55%;
+        left:45%;
+        transform: translate(-50%, -50%);
+    }
+
+    .newpass input {
+        width: 430px;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        font-size: 24px;
+    }
+
+    .newpass p {
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 3;
+    }
+
+     /* 登録ボタン */
+     .create {
+        background:blue;
+        border-radius: 5%;
+        color:#fff;
+        width: 250px;
+        height: 50px;
+        font-size: 23px;
+        text-align: center;
+        font-weight: bold;
+        position: absolute;
+        top:80%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        border-bottom: solid 4px white;
+        z-index: 90;
+    }
+
+    .create-account h2 {
+        font-size: 30px;
+        font-weight: bold;
+        position: absolute;
+        top: 4%;
+        left: 34%;
+        /* color: blue; */
+        border: 3px solid blue;
+        padding: 10px;
+    }
+
+    .create-account .batsu {
+        font-size: 40px;
+         font-weight: bold;
+         border: 5px solid gainsboro;
+         color: #fff;
+         display: flex;
+         justify-content: center;
+         border-radius: 100%;
+         cursor: pointer;
+         position: absolute;
+         top:4%;
+         left:89%;
+     
+     }
+
+     /* ログイン画面 */
+     .login2 {
+        position:absolute;
+        top:45%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        background:slategrey;
+        height:400px;
+        width: 700px;
+        visibility: hidden;
+    }
+    
+
+    .login2.visible {
+        visibility: visible;
+        
+    }
+
+    .login-id {
+        display: flex;
+        padding-top: 50px;
+        position:absolute;
+        top:30%;
+        left:50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .login-id input {
+        width: 430px;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        font-size: 24px;
+    }
+
+    .login-id p {
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 3;
+        margin-right:33px ;
+    }
+
+    .login-pass {
+        display: flex;
+        position:absolute;
+        top:55%;
+        left:45%;
+        transform: translate(-50%, -50%);
+    }
+
+    .login-pass input {
+        width: 430px;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        font-size: 24px;
+    }
+
+    .login-pass p {
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 3;
+    }
+
+     /* 登録ボタン */
+     .loginbtn {
+        background:gold;
+        border-radius: 5%;
+        color:black;
+        width: 250px;
+        height: 50px;
+        font-size: 23px;
+        text-align: center;
+        font-weight: bold;
+        position: absolute;
+        top:80%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        border-bottom: solid 4px white;
+        z-index: 90;
+    }
+
+    .login2 h2 {
+        font-size: 30px;
+        font-weight: bold;
+        position: absolute;
+        top: 4%;
+        left: 10%;
+        /* color: blue; */
+        border: 3px solid gold;
+        padding: 10px;
+    }
+
+    .login2 .batsu {
+        font-size: 40px;
+         font-weight: bold;
+         border: 5px solid gainsboro;
+         color: #fff;
+         display: flex;
+         justify-content: center;
+         border-radius: 100%;
+         cursor: pointer;
+         position: absolute;
+         top:4%;
+         left:90%;
+    }
+
+
+    .loginbtn:hover {
+        background-color: #fff;
+        border-color: gold;
+        color: black;
+      }
+
+.loginbtn:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+    border-bottom: none;
+  }
+
+.loginbtn p {
+    padding-top: 46px;
+    padding-top:15px;
+}
