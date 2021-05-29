@@ -1,0 +1,672 @@
+@charset "utf-8";
+
+/*全体*/
+.wrapper{
+    max-width: 600px;
+    margin: 0 auto;
+    color: #666;
+}
+#header {
+    text-align: center;
+    font-size: 24px;
+    width: 100%;
+    margin: 1rem 0 0;
+}
+
+/*カレンダー*/
+#calendar {
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+#calendar h1{
+    padding-left:200px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th {
+    color: #000;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 20px 50px;
+    text-align: center;
+}
+/*日曜日*/
+td:first-child {
+    color: red;
+}
+/*土曜日*/
+td:last-child {
+    color: blue;
+}
+/*前後月の日付*/
+td.disabled {
+    color: #ccc;
+}
+/*本日*/
+/* td.calendar_td {
+    background-color: #D65E72;
+    color: #fff;
+} */
+
+#next-prev-button {
+    position: relative;
+}
+#next-prev-button button{
+    cursor: pointer;
+    background: #B78D4A;
+    color: #fff;
+    border: 1px solid #B78D4A;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+    margin: 1rem 0;
+}
+#next-prev-button button:hover{
+    background-color: #D4BB92;
+    border-color: #D4BB92;
+}
+#prev {
+    float: left;
+}
+#next {
+    float: right;
+} 
+
+
+body {
+    position: relative;
+}
+
+.event {
+    height: 300px;
+    width: 300px;
+    background: #ccc;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+
+.event.visible {
+    visibility:visible;
+}
+
+
+/* ログイン画面 */
+      /* アカウント作成ボタン */
+
+      .top-page {
+        position: relative;
+        height: 900px;
+        background-image: url("../img/medical.png");
+        background-size: cover; 
+        text-align: center;
+    }
+
+    .idou {
+        display: flex;
+        position: absolute;
+        left:60%;
+        top:65%;
+        transform: translate(-50%, -50%);
+
+
+    }
+    
+    .top-page h2 {
+        font-size: 140px;
+        font-weight: bold;
+       padding-top: 310px;
+    }
+    
+          .make-account {
+            background:#dd0a0a;
+            border-radius: 5%;
+            color:#fff;
+            width: 250px;
+            height: 50px;
+            font-size: 23px;
+            text-align: center;
+            font-weight: bold;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            border-bottom: solid 4px #627295;
+            margin: 15px;
+        }
+        
+        .make-account:hover {
+                background-color: #fff;
+                border-color: #dd0a0a;
+                color: #dd0a0a;
+              }
+        
+        .make-account:active {
+            /*ボタンを押したとき*/
+            -webkit-transform: translateY(4px);
+            transform: translateY(4px);/*下に動く*/
+            box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+            border-bottom: none;
+          }
+        
+        .make-account p {
+            padding-top: 46px;
+            padding-top:15px;
+        }
+    
+    
+        /* ログインボタン */
+          .login {
+            background:gold;
+            border-radius: 5%;
+            color:#fff;
+            width: 250px;
+            height: 50px;
+            font-size: 23px;
+            text-align: center;
+            font-weight: bold;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            border-bottom: solid 4px #627295;
+            margin: 15px;
+        }
+        
+        .login:hover {
+                background-color: #fff;
+                border-color: gold;
+                color: gold;
+              }
+        
+        .login:active {
+            /*ボタンを押したとき*/
+            -webkit-transform: translateY(4px);
+            transform: translateY(4px);/*下に動く*/
+            box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+            border-bottom: none;
+          }
+        
+        .login p {
+            padding-top: 46px;
+            padding-top:15px;
+        }
+    
+    
+       
+        
+        .create:hover {
+                background-color: #fff;
+                border-color: blue;
+                color: blue;
+              }
+        
+        .create:active {
+            /*ボタンを押したとき*/
+            -webkit-transform: translateY(4px);
+            transform: translateY(4px);/*下に動く*/
+            box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+            border-bottom: none;
+          }
+        
+        .create p {
+            padding-top: 46px;
+            padding-top:15px;
+        }
+    
+    
+        /* アカウント作成画面 */
+        .create-account {
+            position:absolute;
+            top:45%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            background:slategrey;
+            height:400px;
+            width: 700px;
+            visibility: hidden;
+        }
+        
+    
+        .create-account.visible {
+            visibility: visible;
+            
+        }
+    
+        .newid {
+            display: flex;
+            padding-top: 50px;
+            position:absolute;
+            top:30%;
+            left:50%;
+            transform: translate(-50%, -50%);
+        }
+    
+        .newid input {
+            width: 430px;
+            height: 50px;
+            border-radius: 5px;
+            border: none;
+            font-size: 24px;
+        }
+    
+        .newid p {
+            font-size: 25px;
+            font-weight: bold;
+            line-height: 3;
+            margin-right:33px ;
+        }
+    
+        .newpass {
+            display: flex;
+            position:absolute;
+            top:55%;
+            left:50%;
+            transform: translate(-50%, -50%);
+        }
+    
+        .newpass input {
+            width: 430px;
+            height: 50px;
+            border-radius: 5px;
+            border: none;
+            font-size: 24px;
+            margin-left:18px;
+            
+        }
+    
+        .newpass p {
+            font-size: 25px;
+            font-weight: bold;
+            line-height: 3;
+        }
+    
+         /* 登録ボタン */
+         .create {
+            background:blue;
+            border-radius: 5%;
+            color:#fff;
+            width: 250px;
+            height: 50px;
+            font-size: 23px;
+            text-align: center;
+            font-weight: bold;
+            position: absolute;
+            top:80%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            border-bottom: solid 4px white;
+            z-index: 90;
+        }
+    
+        .create-account h2 {
+            font-size: 30px;
+            font-weight: bold;
+            position: absolute;
+            top: 4%;
+            left: 34%;
+            /* color: blue; */
+            border: 3px solid blue;
+            padding: 10px;
+        }
+    
+        .create-account .batsu {
+            font-size: 40px;
+             font-weight: bold;
+             border: 5px solid gainsboro;
+             color: #fff;
+             display: flex;
+             justify-content: center;
+             border-radius: 100%;
+             cursor: pointer;
+             position: absolute;
+             top:4%;
+             left:89%;
+         
+         }
+    
+         /* ログイン画面 */
+         .login2 {
+            position:absolute;
+            top:45%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            background:slategrey;
+            height:400px;
+            width: 700px;
+            visibility: hidden;
+        }
+        
+    
+        .login2.visible {
+            visibility: visible;
+            
+        }
+    
+        .login-id {
+            display: flex;
+            padding-top: 50px;
+            position:absolute;
+            top:30%;
+            left:50%;
+            transform: translate(-50%, -50%);
+        }
+    
+        .login-id input {
+            width: 430px;
+            height: 50px;
+            border-radius: 5px;
+            border: none;
+            font-size: 24px;
+        }
+    
+        .login-id p {
+            font-size: 25px;
+            font-weight: bold;
+            line-height: 3;
+            margin-right:33px ;
+        }
+    
+        .login-pass {
+            display: flex;
+            position:absolute;
+            top:55%;
+            left:45%;
+            transform: translate(-50%, -50%);
+        }
+    
+        .login-pass input {
+            width: 430px;
+            height: 50px;
+            border-radius: 5px;
+            border: none;
+            font-size: 24px;
+        }
+    
+        .login-pass p {
+            font-size: 25px;
+            font-weight: bold;
+            line-height: 3;
+        }
+    
+         /* 登録ボタン */
+         .loginbtn {
+            background:gold;
+            border-radius: 5%;
+            color:black;
+            width: 250px;
+            height: 50px;
+            font-size: 23px;
+            text-align: center;
+            font-weight: bold;
+            position: absolute;
+            top:80%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            border-bottom: solid 4px white;
+            z-index: 90;
+        }
+    
+        .login2 h2 {
+            font-size: 30px;
+            font-weight: bold;
+            position: absolute;
+            top: 4%;
+            left: 10%;
+            /* color: blue; */
+            border: 3px solid gold;
+            padding: 10px;
+        }
+    
+        .login2 .batsu {
+            font-size: 40px;
+             font-weight: bold;
+             border: 5px solid gainsboro;
+             color: #fff;
+             display: flex;
+             justify-content: center;
+             border-radius: 100%;
+             cursor: pointer;
+             position: absolute;
+             top:4%;
+             left:90%;
+        }
+    
+    
+        .loginbtn:hover {
+            background-color: #fff;
+            border-color: gold;
+            color: black;
+          }
+    
+    .loginbtn:active {
+        /*ボタンを押したとき*/
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);/*下に動く*/
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+        border-bottom: none;
+      }
+    
+    .loginbtn p {
+        padding-top: 46px;
+        padding-top:15px;
+    }
+
+/* ヘッダー */
+    .header {
+        display: flex;
+        justify-content: space-between;
+        height:70px;
+        background-color:black;
+        color: white;
+    }
+    
+    .header h1 {
+        font-size: 30px;
+        font-weight: bold;
+        padding-left: 40px;
+        /* font-family: cursive; */
+    }
+    .help {
+        display: flex;
+         flex-direction:row ;
+         font-size:24px;
+         padding-right: 20px;
+    }
+    
+    .help1,.help2 {
+        padding:20px 20px;
+    }
+
+    /* ユーザー */
+    /* 入力フォーム */
+    .sinsei {
+        text-align: center;
+        width:900px;
+        height: 550px;
+        background-color: aqua;
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top:50px;
+    }
+
+    .sinsei h1 {
+        font-size: 40px;
+        padding-top: 10px;
+    }
+
+    .date-form {
+        margin: 0 auto;
+        /* display: flex;
+        flex-direction: column; */
+        width: 650px;
+    }
+
+    .date-form input {
+        margin: 15px 0;
+        padding: 15px;
+        /* border-radius: 3%; */
+        font-size:18px;
+        width: 400px;
+    }
+
+    .name {
+        position: relative;
+    }
+
+    .name p {
+        position: absolute;
+        top:30%;
+        font-size: 25px;
+    }
+
+    .riyou {
+        position: relative;
+    }
+
+    .riyou p {
+        position: absolute;
+        top:30%;
+        font-size: 25px;
+    }
+
+    .mokuteki {
+        position: relative;
+    }
+
+    .mokuteki p {
+        position: absolute;
+        top:30%;
+        font-size: 25px;
+    }
+
+    .toplace {
+        position: relative;
+    }
+
+    .toplace p {
+        position: absolute;
+        top:30%;
+        font-size: 25px;
+    }
+
+    #serch {
+        padding:10px 50px;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    /* アウトプット */
+    #ta1 {
+        margin: 70px;
+        width: 900px;
+        font-size: 20px;
+        display: table;
+        position: absolute;
+        top:910%;
+        left: 45%;
+        transform: translateX(-50%);
+        visibility: hidden;
+    }
+
+    #ta1.visible {
+        visibility: visible;
+    }
+    
+    #ta1 td {
+        font-size: 20px;
+        background-color: rgb(241, 239, 239);
+        height: 20px;
+        
+      }
+    
+      #ta1 th {
+        width: 30%;
+        font-size: 20px;
+        background-color: #d0e7fc;
+        text-align: left;
+        line-height: 20px;
+        display: table-cell;
+        vertical-align:middle;
+      }
+
+      #matching {
+          position: absolute;
+          top:300%;
+          width: 500px;
+          height: 200px;
+          background-color: blanchedalmond;
+          text-align: center;
+          padding-top: 30px;
+          left: 50%;
+        transform: translateX(-50%);
+        visibility: hidden;
+      }
+
+      #matching.visible {
+          visibility: visible;
+      }
+
+      #matching h1 {
+          color: crimson;
+          font-size: 35px;
+      }
+
+      #matching button {
+          padding: 15px 50px;
+          margin: 35px 15px;
+          font-size: 20px;
+      }
+
+      .osu {
+          position: absolute;
+          top:70%;
+          left:15%;
+      }
+
+      .osu button {
+          padding:20px 40px;
+          margin: 10px;
+          font-size: 15px;
+      }
+
+      #topmodoru:hover {
+        cursor: pointer;
+      }
+
+      /* ドライバー予定入力 */
+      .event {
+          position: absolute;
+          top: 65%;
+          text-align: center;
+          width: 600px;
+          height: 550px;
+      } 
+
+      .event p{
+        font-size: 24px;
+        font-weight: bold;
+        text-align: left;
+        padding-left:90px;
+        padding-top: 20px;
+      }
+
+      .event input {
+          padding:10px 80px;
+          margin: 10px;
+          font-size: 25px;
+      }
+
+      .event button {
+        padding:10px 40px;
+        margin: 10px;
+        font-size: 15px;
+      }

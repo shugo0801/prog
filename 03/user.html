@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ユーザー画面 </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+
+    <!-- header -->
+    <div class="header">
+        <h1 id="topmodoru" onclick="modoru()">CARE SUCCESS</h1>
+        <div class="help">
+        <div class="help1">ヘルプ</div>
+        <div class="help2">フィードバック</div>
+         </div>
+    </div>
+
+    <div class="wrapper">
+    <div class="sinsei">
+        <div class="title"><h1>CAREタクシーマッチング</h1></div>
+    
+        <div class="date-form">
+            <div class="name">
+            <p>名 前</p>
+            <input type="text" id="name">
+             </div>
+             <div class="riyou">
+            <p>利用日</p>
+            <input type="date" id="riyou" value="2021-5-22">
+            </div>
+            <div class="mokuteki"><p>利用目的</p>
+            <input type="text" name="mokuteki" id="mokuteki">
+            </div>
+            <div class="toplace"><p>目的地</p>
+            <input type="text" id="toplace">
+             </div>
+        </div> 
+        <button id="serch">検索</button>
+    </div>
+
+    <!-- アウトプット -->
+    <table id="ta1" cellspacing="5"> 
+        <tr>
+        <th>▼ 利用日</th>
+        <td id="day1"></td>
+        </tr>
+        <tr>
+        <th>▼ 利用目的</th>
+        <td id="puro"></td>
+        </tr>
+        <tr>
+        <th>▼ 目的地</th>
+        <td id="tp"></td>
+        </tr>
+    </table>
+
+    <div id="matching">
+        <div class="repo">
+            <h1>マッチングしました！！！</h1>
+            <button id="yoyaku">予約する</button>
+            <button id="modoru">戻る</button>
+        </div>
+    </div>
+
+    </div>
+    
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase.js"></script>
+    <script> var firebaseConfig = {
+        apiKey: "AIzaSyCCsomddel5-1mX7n7OsXeGeO0vKZfMjzs",
+        authDomain: "dev20chat.firebaseapp.com",
+        databaseURL: "https://dev20chat-default-rtdb.firebaseio.com/",
+        projectId: "dev20chat",
+        storageBucket: "dev20chat.appspot.com",
+        messagingSenderId: "644819121672",
+        appId: "1:644819121672:web:88ef18befbb66422ce83bd"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+  
+      //firebaseのデーターベース（保存させる場所）を使いますよ
+      const newPostRef = firebase.database().ref();   //firebase特有の書き方</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/user.js"></script>
+</body>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マッチング</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+     <!-- header -->
+     <div class="header">
+        <h1 id="topmodoru" onclick="modoru()">CARE SUCCESS</h1>
+        <div class="help">
+        <div class="help1">ヘルプ</div>
+        <div class="help2">フィードバック</div>
+         </div>
+    </div>
+
+    <div class="wrapper">
+        <!-- カレンダー -->
+        <div id="calendar"></div>
+
+
+        <div class="event">
+            <p>予定</p>
+            <input type="text" name="date" id="date" readonly>
+            <p>タイトル</p>
+            <input type="text" id="title">
+            <p>内容</p>
+            <input type="text" id="event">
+            <p>場所</p>
+            <input type="text" id="place">
+            <div class="sousin">
+                <button id="send">送信</button>
+                <button id="modoru" onclick="temae()">戻る</button>
+            </div>
+        </div>
+    
+
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase.js"></script>
+    <script> var firebaseConfig = {
+        apiKey: "AIzaSyCCsomddel5-1mX7n7OsXeGeO0vKZfMjzs",
+        authDomain: "dev20chat.firebaseapp.com",
+        databaseURL: "https://dev20chat-default-rtdb.firebaseio.com/",
+        projectId: "dev20chat",
+        storageBucket: "dev20chat.appspot.com",
+        messagingSenderId: "644819121672",
+        appId: "1:644819121672:web:88ef18befbb66422ce83bd"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+  
+      //firebaseのデーターベース（保存させる場所）を使いますよ
+      const newPostRef = firebase.database().ref();   //firebase特有の書き方</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</body>
+</html>
